@@ -25,12 +25,11 @@ const app = express();
 
 // db
 mongoose
-    .connect("mongodb+srv://thienng93:hello123@cluster0-w0dsx.mongodb.net/test?retryWrites=true&w=majority", {
+    .connect("mongodb+srv://dbadmin:dbadmin@cluster0-w0dsx.mongodb.net/test?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useCreateIndex: true
     })
     .then(() => console.log("DB Connected"));
-
 // middlewares
 app.use(morgan("dev"));
 app.use(bodyParser.json());
