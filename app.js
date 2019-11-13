@@ -25,7 +25,7 @@ const app = express();
 
 // db
 mongoose
-    .connect("mongodb+srv://dbadmin:dbadmin@cluster0-w0dsx.mongodb.net/test?retryWrites=true&w=majority", {
+    .connect("mongodb+srv://dbadmin:dbadmin@cluster0-w0dsx.azure.mongodb.net/test?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useCreateIndex: true
     })
@@ -59,7 +59,7 @@ app.use(cors());
 //         let description = item['symbol'];
 //         console.log(description)
 //         let price = item['quote']['USD']['price'];
-//         let category = '5dca4bf5b5a823c6ddf09ecd';
+//         let category = '5dcbb156b8dded2e40a17a30';
 //         let quantity = 1;
 //         let shipping = true;
 //         let filePath = '';
